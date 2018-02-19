@@ -11,7 +11,6 @@
   text-align: left;
 }
 
-
 .hidden.menu {
   display: none;
 }
@@ -40,6 +39,7 @@
 .masthead h3 {
   margin-top: 9.5em
 }
+
 .masthead h1.ui.header {
   /* margin-top: 3.5em; */
   margin-bottom: 0em;
@@ -55,18 +55,20 @@
 .ui.vertical.stripe {
   padding: 3.5em 0em;
 }
+
 .ui.vertical.stripe h3 {
   font-size: 2em;
 }
 
-.ui.vertical.stripe .button + h3,
-.ui.vertical.stripe p + h3 {
+.ui.vertical.stripe .button+h3,
+.ui.vertical.stripe p+h3 {
   margin-top: 3em;
 }
 
 .ui.vertical.stripe .floated.image {
   clear: both;
 }
+
 .ui.vertical.stripe p {
   font-size: 1.33em;
 }
@@ -78,6 +80,7 @@
 .quote.stripe.segment {
   padding: 0em;
 }
+
 .quote.stripe.segment .grid .column {
   padding-top: 5em;
   padding-bottom: 5em;
@@ -91,7 +94,36 @@
   display: none;
 }
 
+.ui.button.primary {
+  background-color: #F75565;
+}
 
+.ui.primary.button:hover {
+  background-color: white;
+  border: 2px solid #F75565;
+  color: #F75565;
+}
+
+/* Mis clases */
+
+.ui .grid .case-study {
+  margin: 11em 0;
+}
+
+.tags a.tag {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.buttons .ui.button {
+  margin-top: 40px;
+  margin-right: 15px;
+}
+
+.ui.button.btn-github {
+  background-color: #40C7CA;
+  color: white;
+}
 
 @media only screen and (max-width: 700px) {
   .ui.fixed.menu {

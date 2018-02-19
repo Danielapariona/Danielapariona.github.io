@@ -45,7 +45,6 @@
 }
 
 .masthead h1.ui.header {
-  /* margin-top: 3.5em; */
   margin-bottom: 0em;
   font-size: 4em;
   font-weight: normal;
@@ -136,6 +135,33 @@
   align-items: center;
 }
 
+.ui.progress .bar-html {
+  background-color: #2DCDE3;
+}
+
+.ui.progress .bar-css {
+  background-color:#49AFEA;
+}
+
+.ui.progress .bar-js {
+  background-color: #16D399;
+}
+
+.ui.progress .bar-jquery {
+  background-color: #FE7587;
+}
+
+.ui.progress .bar-git {
+  background-color: #FFA87D;
+}
+
+.ui.progress .bar-sketch {
+  background-color: #5075E0;
+}
+
+.ui.ui.progress .bar-bootstrap {
+  background-color: #1C3259;
+}
 
 @media only screen and (max-width: 700px) {
   .ui.fixed.menu {

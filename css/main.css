@@ -28,6 +28,10 @@
   background-color: #75BDBF;
 }
 
+.ui.inverted.vertical.footer {
+  background-color: #3D3D43;
+}
+
 .ui.secondary.inverted.pointing.menu {
   border: none;
 }
@@ -56,16 +60,7 @@
 }
 
 .ui.vertical.stripe {
-  padding: 3.5em 0em;
-}
-
-.ui.vertical.stripe h3 {
-  font-size: 2em;
-}
-
-.ui.vertical.stripe .button+h3,
-.ui.vertical.stripe p+h3 {
-  margin-top: 3em;
+  padding: 4.6em 0em;
 }
 
 .ui.vertical.stripe .floated.image {
@@ -90,7 +85,16 @@
 }
 
 .footer.segment {
-  padding: 5em 0em;
+  padding: 2.5em 0em;
+}
+
+.footer.vertical:first-child {
+  background-color: #3D3D43;
+}
+
+.footer.vertical:nth-child(2) {
+  background-color: #2F2F33;
+  color: white;
 }
 
 .secondary.pointing.menu .toc.item {
@@ -107,10 +111,28 @@
   color: #F75565;
 }
 
+.ui.progress:first-child {
+  margin: 0 0 3.5em;
+}
+
+.ui.progress {
+  margin: 1em 0 3.5em;
+}
+
+.ui.circular.button>.icon {}
+
+i.icon,
+i.icons {
+  font-size: 1.3em;
+}
+
 /* Mis clases */
 
 .ui .grid .case-study {
-  margin: 11em 0;
+  margin-top: 8em;
+  margin-bottom: 4em;
+  margin-right: 2em;
+  margin-left: 2em;
 }
 
 .tags a.tag {
@@ -135,12 +157,18 @@
   align-items: center;
 }
 
+.center-y.contact {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .ui.progress .bar-html {
   background-color: #2DCDE3;
 }
 
 .ui.progress .bar-css {
-  background-color:#49AFEA;
+  background-color: #49AFEA;
 }
 
 .ui.progress .bar-js {
@@ -161,6 +189,25 @@
 
 .ui.ui.progress .bar-bootstrap {
   background-color: #1C3259;
+}
+
+.gray {
+  background-color: rgba(231, 235, 239, 0.35);
+}
+
+.profile {
+  float: right;
+  margin-right: 3em;
+}
+
+.profile img {
+  margin-bottom: 1em;
+}
+
+.contact i.icon {
+  font-size: 2.1rem;
+  margin-right: 3rem;
+  color: #76BDC0;
 }
 
 @media only screen and (max-width: 700px) {

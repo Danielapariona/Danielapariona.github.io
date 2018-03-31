@@ -225,6 +225,32 @@ h2.ui.horizontal.header.divider {
   padding: 0 15px;
 }
 
+.grayscale {
+  filter: grayscale(80%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  width: 70px;
+}
+
+.gray {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.logos {
+  margin-top: 25px;
+}
+
 @media only screen and (max-width: 700px) {
   .ui.fixed.menu {
     display: none !important;

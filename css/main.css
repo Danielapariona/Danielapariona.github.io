@@ -106,7 +106,6 @@
   margin: 1em 0 3.5em;
 }
 
-
 /* i.icon,
 i.icons {
   font-size: 1.3em;
@@ -177,6 +176,10 @@ i.icons {
   background-color: #1C3259;
 }
 
+h2.ui.horizontal.header.divider {
+  color: #FE7587
+}
+
 .gray {
   background-color: rgba(231, 235, 239, 0.35);
 }
@@ -207,11 +210,11 @@ i.icons {
   background-color: white
 }
 
-.ui.button.social:hover i.icon{
+.ui.button.social:hover i.icon {
   color: #75bdbf;
 }
 
-.ui.button.social i.icon { 
+.ui.button.social i.icon {
   padding-top: 5px;
   font-size: 2em;
   color: white;

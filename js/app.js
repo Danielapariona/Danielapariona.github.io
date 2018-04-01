@@ -17,6 +17,9 @@ $(document)
     $('.ui.sidebar')
       .sidebar('attach events', '.toc.item');
 
+    /* $('.ui.sidebar')
+      .sidebar('toggle'); */
+
     $('.masthead').visibility({
       once: false,
       continuous: true,
@@ -35,7 +38,7 @@ $(document)
       .visibility({
         once: false,
         observeChanges: false,
-        offset: 50,
+        offset: 150,
         onTopPassed: function () {
           $segment = $(this);
           var index = $stripeSegments.index($segment);

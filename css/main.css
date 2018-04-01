@@ -4,7 +4,7 @@
 
 .masthead {
   margin-top: 0 !important;
-  background-image: url(https://ironsummitmedia.github.io/startbootstrap-creative/img/header.jpg) !important;
+  background-image: url('../assets/images/image.png') !important;
   min-height: 700px;
 }
 
@@ -18,22 +18,22 @@
   padding-bottom: 6em;
 }
 
-.ui.vertical.stripe:nth-child(odd) {
+.ui.vertical.stripe:nth-child(even) {
   background-color: rgba(231, 235, 239, 0.35);
 }
 
 .ui.vertical.stripe h2 {
   font-size: 2em;
-  padding: 3em 0 3em;
+  padding: 3em 0 1.8em;
   color: #F75565;
 }
 
-body.pushable>.pusher {
+.ui.segment.masthead {
   background-color: #75bdbf;
 }
 
-body.pushable {
-  background: #fff !important;
+.ui.ten.column.doubling.stackable.grid.container.skills {
+  padding-top: 2em;
 }
 
 .ui.segment {
@@ -70,16 +70,22 @@ body.pushable {
 
 .ui.secondary.menu .ui.container .right.menu a {
   color: #fff;
+
 }
 
-/* .ui.secondary.menu .active.item {
-  border-color: #F75565;
-} */
+.ui.grid>.row {
+  padding-top: none;
+}
+
 /* Mis clases */
 
 .ui.grid.container.case-study {
   margin-top: 3em;
   margin-bottom: 10em;
+}
+
+.color-white {
+  color: #fff !important;
 }
 
 .ui.grid.container.case-study:last-child {
@@ -118,10 +124,6 @@ h2.ui.horizontal.header.divider {
   color: #FE7587
 }
 
-.gray {
-  background-color: rgba(231, 235, 239, 0.35);
-}
-
 .profile {
   float: right;
   margin-right: 3em;
@@ -141,7 +143,7 @@ h2.ui.horizontal.header.divider {
   padding: 20px 18px;
   margin-right: 30px;
   border: solid 2px white;
-  background-color: #75bdbf;
+  background-color: #67a1a3;
 }
 
 .ui.button.social:hover {

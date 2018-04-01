@@ -11,44 +11,44 @@
 </head>
 
 <body>
-  <div class="ui large top fixed hidden menu">
-    <div class="ui container">
-      <a class="item ">DP</a>
-      <div class="right menu">
-        <a class="ui item active">Acerca de mi</a>
-        <a class="ui item">Skills</a>
-        <a class="ui item">Portafolio</a>
-        <a class="ui item">Contacto</a>
-      </div>
-    </div>
+  <div class='ui sidebar vertical menu'>
+      <a class='link item' href='#home'>Home</a>
+    <a class='link item' href='#about-me'>Acerca de mí</a>
+    <a class='link item' href='#skills'>Conocimientos</a>
+    <a class='link item' href='#portfolio'>Portafolio</a>
+    <a class='link item' href='#contact'>Contacto</a>
   </div>
-  <!--Sidebar Menu-->
-  <div class="ui vertical inverted sidebar menu">
-    <a class="item">DP</a>
-    <a class="active item">About</a>
-    <a class="item">Skills</a>
-    <a class="item">Portafolio</a>
-    <a class="item">Contact</a>
-  </div>
-  <!--Page Contents-->
-  <div class="pusher">
-    <div class="ui inverted vertical masthead center aligned segment">
-      <div class="ui container">
-        <div class="ui large secondary inverted pointing menu">
-          <a class="toc item">
-            <i class="sidebar icon"></i>
+  <div class='ui grid'>
+    <div class='tablet computer only row'>
+      <div class='ui about-me fixed large secondary menu about-me-bar'>
+        <div class='ui container'>
+          <a class='icon item'>
+            DP
           </a>
-          <a class="item ">DP</a>
-          <div class="right menu">
-            <a class="ui item active">A cerca de mi</a>
-            <a class="ui item">Skills</a>
-            <a class="ui item">Portafolio</a>
-            <a class="ui item">Contacto</a>
+          <div class='right menu' id='following-nav'>
+            <a class='link item scroll-to' href='#home'>Home</a>
+            <a class='link item scroll-to' href='#about-me'>Acerca de mí</a>
+            <a class='link item scroll-to' href='#skills'>Conocimientos</a>
+            <a class='link item scroll-to' href='#portfolio'>Portafolio</a>
+            <a class='link item scroll-to' href='#contact'>Contacto</a>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class='ui segment masthead pusher' id='home'>
+    <div class='ui grid'>
+      <div class='mobile only row'>
+        <div class='ui large secondary menu'>
+          <a class='item toc'>
+            <i class='sidebar icon'></i>
+            Menu
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class='ui text center aligned container'>
       <div class="ui text container">
-        <h3>Hola & Bienvenido(a)</h3>
         <h1 class="ui inverted header">
           Soy Daniela Pariona
         </h1>
@@ -68,266 +68,255 @@
         </a>
       </div>
     </div>
-    <section class="ui vertical stripe">
-      <div class="ui grid container">
-        <div class="sixteen wide column justify aligned">
-          <h2 class="ui horizontal header divider">
-            Acerca de mi
-          </h2>
-          <p class="justify-text">
-            ¡Hola! soy Daniela Pariona, bachiller en ingeniería de sistemas y front-end developer egresada de Laboratoria, estoy enfocada
-            en el desarrollo de aplicaciones y siempre en constante aprendizaje. Disfruto enfrentarme a nuevos retos para
-            seguir desarrollando mis habilidades tecnológicas. Me gusta aprender en equipo y compartir mis conocimientos,
-            realicé talleres para que más mujeres conozcan el mundo de la programación mediante el lenguaje de programación
-            <i>Ruby</i> y
-            <i>Python</i>. Mi objetivo es llegar a ser Project Manager en desarrollo de aplicaciones y trabajar en una compañia
-            que me permita crecer profesionalmente.
-          </p>
+  </div>
+  <div class='ui vertical stripe segment' id='about-me'>
+    <div class='ui center aligned container'>
+      <h2 class='ui horizontal header divider'>Acerca de mí</h2>
+      <p class="justify-text">
+        ¡Hola! soy Daniela Pariona, bachiller en ingeniería de sistemas y front-end developer egresada de Laboratoria, estoy enfocada
+        en el desarrollo de aplicaciones y siempre en constante aprendizaje. Disfruto enfrentarme a nuevos retos para seguir
+        desarrollando mis habilidades tecnológicas. Me gusta aprender en equipo y compartir mis conocimientos, realicé talleres
+        para que más mujeres conozcan el mundo de la programación mediante el lenguaje de programación
+        <i>Ruby</i> y
+        <i>Python</i>. Mi objetivo es llegar a ser Project Manager en desarrollo de aplicaciones y trabajar en una compañia
+        que me permita crecer profesionalmente.
+      </p>
+    </div>
+    <br>
+    <br>
+
+    <div class='ui three column doubling stackable grid container skills'>
+      <div class="column center aligned">
+        <img src="assets/icons/autodidacta.png" alt="">
+        <h4>Autodidacta</h4>
+        <p class="justify-text">
+          Porque el conocimiento no tiene límites, siempre busco aprender las nuevas herramientas tecnológicas y actualizaciones que
+          surgen para ofrecer las mejores soluciones.
+        </p>
+      </div>
+      <div class="column center aligned">
+        <img src="assets/icons/multitask.png" alt="">
+        <h4>Multitask</h4>
+        <p class="justify-text">En mi experiencia trabajando en una Startup, realicé diversas tareas en paralelo, desde marketing digital, diseño
+          de interfaces, programación y desarrollo Web.
+        </p>
+      </div>
+      <div class="column center aligned">
+        <img src="assets/icons/adaptabilidad.png" alt="">
+        <h4>Adaptabilidad</h4>
+        <p class="justify-text">
+          En cada proyecto asignado, busco la forma de ponerme al tanto de los avances y aprender otras herramientas para añadir valor
+          agregado. Adaptabilidad al cambio.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class='ui vertical stripe segment' id='skills'>
+    <div class='ui center aligned text container'>
+      <h2 class='ui horizontal header divider'>Conocimientos</h2>
+    </div>
+    <div class='ui four column doubling stackable grid container'>
+      <div class="column">
+        <h3>Desarrollo Web</h3>
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>JAVASCRIPT</p>
+        <p>JQUERY</p>
+        <p>REACT</p>
+      </div>
+      <div class="column">
+        <h3>Herramientas</h3>
+        <p>GIT</p>
+        <p>AJAX</p>
+        <p>API's</p>
+        <p>NODE.JS</p>
+        <p>SKECHTAPP</p>
+      </div>
+      <div class="column">
+        <h3>Framework de CSS</h3>
+        <p>BOOTSTRAP</p>
+        <p>SEMANTIC UI</p>
+        <p>MATERIALIZE</p>
+      </div>
+      <div class="column">
+        <h3>Metodologías Ágiles</h3>
+        <p>SCRUM</p>
+        <p>KANBAN</p>
+      </div>
+    </div>
+    <div class='ui ten column doubling stackable grid container'>
+      <div class="column">
+        <img src="assets/images/html5.png" alt="HTML5" class="grayscale">
+      </div>
+      <div class="column">
+        <img src="assets/images/css3.png" alt="CSS3" class="grayscale">
+      </div>
+      <div class="column">
+        <img src="assets/images/javascript.png" alt="JavsScript" class="grayscale">
+      </div>
+      <div class="column">
+        <img src="assets/images/react.png" alt="React" class="grayscale">
+      </div>
+      <div class="column">
+        <img src="assets/images/git.png" alt="git" class="grayscale">
+      </div>
+      <div class="column">
+        <img src="assets/images/bootstrap.png" alt="Bootstrap" class="grayscale">
+      </div>
+      <div class="column">
+        <img src="assets/images/semantic-ui.png" alt="Semantic ui" class="grayscale">
+      </div>
+      <div class="column">
+        <img src="assets/images/node.png" alt="" class="grayscale">
+      </div>
+      <div class="column">
+        <img src="assets/images/sketchapp.png" alt="" class="grayscale">
+      </div>
+      <div class="column">
+        <img src="assets/images/materialize.png" alt="" class="grayscale">
+      </div>
+    </div>
+  </div>
+  <div class='ui vertical stripe segment' id='portfolio'>
+    <div class='ui center aligned text container'>
+      <h2 class='ui horizontal header divider'>Portafolio</h2>
+    </div>
+    <div class='ui grid container case-study doubling stackable'>
+      <div class="nine wide column">
+        <img src="assets/images/swapi_1x.png" alt="">
+      </div>
+      <div class="seven wide column">
+        <h3>Swapi</h3>
+        <p>Encuentra la información de tus personajes favoritos de Star Wars!</p>
+        <p>En esta aplicación se utilizó la API
+          <a href="https://swapi.co/">Swapi</a> para mostrar los datos de cada personaje en un modal al hacer click.</p>
+        <div class="tags">
+          <a class="ui tag label">JS</a>
+          <a class="ui tag label">HTML</a>
+          <a class="ui tag label">CSS</a>
+        </div>
+        <div class="buttons">
+          <a class="ui button btn-github" href="https://github.com/Danielapariona/api-swapi" target="_blank">
+            <i class="icon github"></i>Github</a>
+          <a class="ui button primary" href="https://danielapariona.github.io/api-swapi/" target="_blank">Ver Demo</a>
+        </div>
+      </div>
+    </div>
+    <div class='ui grid container case-study doubling stackable'>
+      <div class="seven wide column">
+        <h3>Labcar</h3>
+        <p>Es este proyecto se implentó Mobile First y su versión en Desktop.</p>
+        <p>
+          Aplicación que facilita a las personas encontrar transporte. Los conductores también pueden registrarse y brindar sus servicios.
+        </p>
+        <div class="tags">
+          <a class="ui tag label">JS</a>
+          <a class="ui tag label">HTML</a>
+          <a class="ui tag label">CSS</a>
+          <a class="ui tag label">Bootstrap</a>
+        </div>
+        <div class="buttons">
+          <a class="ui button btn-github" href="https://github.com/Danielapariona/lab-car-boilerplate" target="_blank">
+            <i class="icon github"></i>Github</a>
+          <a class="ui button primary" href="https://danielapariona.github.io/lab-car-boilerplate/" target="_blank">Ver Demo</a>
+        </div>
+      </div>
+      <div class="nine wide column">
+        <img src="assets/images/swapi_1x.png" alt="">
+      </div>
+    </div>
+    <div class='ui grid container case-study doubling stackable'>
+      <div class="seven wide column">
+        <img src="assets/images/foodmap_1x.png" alt="Foodmap">
+      </div>
+      <div class="nine wide column">
+        <h3>Foodmap</h3>
+        <p>¡Encuentra los restaurantes cerca de ti! filtra por el tipo de comida que te gusta y realiza pedidos.</p>
+        <p>La aplicación muestra la información de los platos que ofrece el restaurante mediante un modal.</p>
+        <div class="tags">
+          <a class="ui tag label">JS</a>
+          <a class="ui tag label">HTML</a>
+          <a class="ui tag label">CSS</a>
+          <a class="ui tag label">JQuery</a>
+        </div>
+        <div class="buttons">
+          <a class="ui button btn-github" href="https://github.com/Danielapariona/foodmap" target="_blank">
+            <i class="icon github"></i>Github</a>
+          <a class="ui button primary" href="https://danielapariona.github.io/foodmap/" target="_blank">Ver Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='ui vertical stripe segment' id='contact'>
+    <div class='ui center aligned text container'>
+      <h2 class='ui horizontal header divider'>Contacto</h2>
+    </div>
+    <div class="ui sixteen column doubling stackable grid container">
+      <div class="eight wide column">
+        <figure class="profile">
+          <img src="assets/images/daniela.png" alt="">
           <br>
-        </div>
-        <div class="three column row stackable">
-          <div class="column center aligned">
-            <img src="assets/icons/autodidacta.png" alt="">
-            <h4>Autodidacta</h4>
-            <p class="justify-text">
-              Porque el conocimiento no tiene límites, siempre busco aprender las nuevas herramientas tecnológicas y actualizaciones que
-              surgen para ofrecer las mejores soluciones.
-            </p>
-          </div>
-          <div class="column center aligned">
-            <img src="assets/icons/multitask.png" alt="">
-            <h4>Multitask</h4>
-            <p class="justify-text">En mi experiencia trabajando en una Startup, realicé diversas tareas en paralelo, desde marketing digital, diseño
-              de interfaces, programación y desarrollo Web.
-            </p>
-          </div>
-          <div class="column center aligned">
-            <img src="assets/icons/adaptabilidad.png" alt="">
-            <h4>Adaptabilidad</h4>
-            <p class="justify-text">
-              En cada proyecto asignado, busco la forma de ponerme al tanto de los avances y aprender otras herramientas para añadir valor
-              agregado. Adaptabilidad al cambio.
-            </p>
-          </div>
-        </div>
+          <figcaption>
+            <h3 class="ui header center aligned">Daniela Pariona
+              <div class="sub header">Front-end developer</div>
+            </h3>
+          </figcaption>
+        </figure>
       </div>
-    </section>
-    <section class="ui vertical stripe gray">
-      <div class="ui grid container">
-        <div class="sixteen wide column center aligned">
-          <h2 class="ui horizontal header divider">
-            Conocimientos
-          </h2>
-        </div>
-        <div class="four column row stackable">
-          <div class="column">
-            <h3>Desarrollo Web</h3>
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>JAVASCRIPT</p>
-            <p>JQUERY</p>
-            <p>REACT</p>
-          </div>
-          <div class="column">
-            <h3>Herramientas</h3>
-            <p>GIT</p>
-            <p>AJAX</p>
-            <p>API's</p>
-            <p>NODE.JS</p>
-            <p>SKECHTAPP</p>
-          </div>
-          <div class="column">
-            <h3>Framework de CSS</h3>
-            <p>BOOTSTRAP</p>
-            <p>SEMANTIC UI</p>
-            <p>MATERIALIZE</p>
-          </div>
-          <div class="column">
-            <h3>Metodologías Ágiles</h3>
-            <p>SCRUM</p>
-            <p>KANBAN</p>
-          </div>
-        </div>
-        <div class="ten column row stackable logos">
-          <div class="column">
-            <img src="assets/images/html5.png" alt="HTML5" class="grayscale">
-          </div>
-          <div class="column">
-            <img src="assets/images/css3.png" alt="CSS3" class="grayscale">
-          </div>
-          <div class="column">
-            <img src="assets/images/javascript.png" alt="JavsScript" class="grayscale">
-          </div>
-          <div class="column">
-            <img src="assets/images/react.png" alt="React" class="grayscale">
-          </div>
-          <div class="column">
-            <img src="assets/images/git.png" alt="git" class="grayscale">
-          </div>
-          <div class="column">
-            <img src="assets/images/bootstrap.png" alt="Bootstrap" class="grayscale">
-          </div>
-          <div class="column">
-            <img src="assets/images/semantic-ui.png" alt="Semantic ui" class="grayscale">
-          </div>
-          <div class="column">
-            <img src="assets/images/node.png" alt="" class="grayscale">
-          </div>
-          <div class="column">
-            <img src="assets/images/sketchapp.png" alt="" class="grayscale">
-          </div>
-          <div class="column">
-            <img src="assets/images/materialize.png" alt="" class="grayscale">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="ui vertical stripe">
-      <div class="ui grid container">
-        <div class="sixteen wide column">
-          <h2 class="ui horizontal header divider">
-            Portafolio
-          </h2>
-        </div>
-        <div class="ui stackable grid case-study">
-          <div class="nine wide column">
-            <img src="assets/images/swapi_1x.png" alt="">
-          </div>
-          <div class="seven wide column">
-            <h3>Swapi</h3>
-            <p>Encuentra la información de tus personajes favoritos de Star Wars!</p>
-            <p>En esta aplicación se utilizó la API
-              <a href="https://swapi.co/">Swapi</a> para mostrar los datos de cada personaje en un modal al hacer click.</p>
-            <div class="tags">
-              <a class="ui tag label">JS</a>
-              <a class="ui tag label">HTML</a>
-              <a class="ui tag label">CSS</a>
-            </div>
-            <div class="buttons">
-              <a class="ui button btn-github" href="https://github.com/Danielapariona/api-swapi" target="_blank">
-                <i class="icon github"></i>Github</a>
-              <a class="ui button primary" href="https://danielapariona.github.io/api-swapi/" target="_blank">Ver Demo</a>
-            </div>
-          </div>
-        </div>
-        <div class="ui stackable grid case-study">
-          <div class="seven wide column">
-            <h3>Labcar</h3>
-            <p>Es este proyecto se implentó Mobile First y su versión en Desktop.</p>
-            <p>
-              Aplicación que facilita a las personas encontrar transporte. Los conductores también pueden registrarse y brindar sus servicios.
-            </p>
-            <div class="tags">
-              <a class="ui tag label">JS</a>
-              <a class="ui tag label">HTML</a>
-              <a class="ui tag label">CSS</a>
-              <a class="ui tag label">Bootstrap</a>
-            </div>
-            <div class="buttons">
-              <a class="ui button btn-github" href="https://github.com/Danielapariona/lab-car-boilerplate" target="_blank">
-                <i class="icon github"></i>Github</a>
-              <a class="ui button primary" href="https://danielapariona.github.io/lab-car-boilerplate/" target="_blank">Ver Demo</a>
-            </div>
-          </div>
-          <div class="nine wide column">
-            <img src="assets/images/labcar_1x.png" alt="">
-          </div>
-        </div>
-        <div class="ui stackable grid case-study">
-          <div class="seven wide column">
-            <img src="assets/images/foodmap_1x.png" alt="">
-          </div>
-          <div class="nine wide column">
-            <h3>Foodmap</h3>
-            <p>¡Encuentra los restaurantes cerca de ti! filtra por el tipo de comida que te gusta y realiza pedidos.</p>
-            <p>La aplicación muestra la información de los platos que ofrece el restaurante mediante un modal.</p>
-            <div class="tags">
-              <a class="ui tag label">JS</a>
-              <a class="ui tag label">HTML</a>
-              <a class="ui tag label">CSS</a>
-              <a class="ui tag label">JQuery</a>
-            </div>
-            <div class="buttons">
-              <a class="ui button btn-github" href="https://github.com/Danielapariona/foodmap" target="_blank">
-                <i class="icon github"></i>Github</a>
-              <a class="ui button primary" href="https://danielapariona.github.io/foodmap/" target="_blank">Ver Demo</a>
-            </div>
-          </div>
-        </div>
+      <div class="eight wide column center-y contact ">
+        <a href="https://github.com/Danielapariona" target="_blank">
+          <i class="github alternative icon"></i>danielaparionac
+        </a>
+        <br>
+        <a href="https://www.linkedin.com/in/danielaparionac/" target="_blank">
+          <i class="linkedin icon"></i>danielaparionac
+        </a>
+        <br>
+        <a href="mailto:daniela.parionac@gmail.com">
+          <i class="envelope open outline icon"></i>daniela.parionac@gmail.com
+        </a>
+        <br>
+        <a>
+          <i class="mobile alternate icon"></i>(+51) 948 864 339
+        </a>
+        <br>
+        <a href="">
+          <i class="download icon"></i>CV Daniela Pariona</a>
         <br>
       </div>
-    </section>
-    <section class="ui vertical stripe gray">
-      <div class="ui grid container ui stackable grid">
-        <div class="sixteen wide column">
-          <h2 class="ui horizontal header divider">
-            Contacto
-          </h2>
-        </div>
-        <div class="eight wide column">
-          <figure class="profile">
-            <img src="assets/images/daniela.png" alt="">
-            <br>
-            <figcaption>
-              <h2 class="ui header center aligned">Daniela Pariona
-                <div class="sub header">Front-end developer</div>
-              </h2>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="eight wide column center-y contact ">
-          <a href="https://github.com/Danielapariona" target="_blank">
-            <i class="github alternative icon"></i>danielaparionac
-          </a>
-          <br>
-          <a href="https://www.linkedin.com/in/danielaparionac/" target="_blank">
-            <i class="linkedin icon"></i>danielaparionac
-          </a>
-          <br>
-          <a href="mailto:daniela.parionac@gmail.com">
-            <i class="envelope open outline icon"></i>daniela.parionac@gmail.com
-          </a>
-          <br>
-          <a>
-            <i class="mobile alternate icon"></i>(+51) 948 864 339
-          </a>
-          <br>
-          <a href="">
-            <i class="download icon"></i>CV Daniela Pariona</a>
-          <br>
-        </div>
-      </div>
-      <br>
-    </section>
-    </section>
-    <footer>
-      <div class="ui vertical footer segment">
-        <div class="ui grid container">
-          <div class="sixteen wide column ui center aligned">
-            <a class="circular ui icon button" href="https://medium.com/@danielaparionacoronado" target="_blank">
-              <i class="medium icon"></i>
-            </a>
-            <a class="circular ui icon button" href="https://www.linkedin.com/in/danielaparionac/" target="_blank">
-              <i class="linkedin icon"></i>
-            </a>
-            <a class="circular ui icon button" href="https://twitter.com/Danielapc21" target="_blank">
-              <i class="twitter icon"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="ui vertical footer segment">
-        <div class="ui grid container">
-          <div class="sixteen wide column ui center aligned">
-            <p>Copyright © Daniela Pariona</p>
-          </div>
-        </div>
-    </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
-    <script src="vendors/semantic/semantic.min.js"></script>
-    <script src="js/app.js"></script>
+  </div>
+  </div>
+  <footer>
+    <div class="ui vertical footer segment">
+      <div class="ui grid container">
+        <div class="sixteen wide column ui center aligned">
+          <a class="circular ui icon button" href="https://medium.com/@danielaparionacoronado" target="_blank">
+            <i class="medium icon"></i>
+          </a>
+          <a class="circular ui icon button" href="https://www.linkedin.com/in/danielaparionac/" target="_blank">
+            <i class="linkedin icon"></i>
+          </a>
+          <a class="circular ui icon button" href="https://twitter.com/Danielapc21" target="_blank">
+            <i class="twitter icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="ui vertical footer segment">
+      <div class="ui grid container">
+        <div class="sixteen wide column ui center aligned">
+          <p>Copyright © Daniela Pariona</p>
+        </div>
+      </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="vendors/semantic/semantic.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

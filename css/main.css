@@ -1,74 +1,43 @@
-.ui.progress>.label {
-  text-align: left;
+.top-bar.fixed-top {
+  border-bottom: 1px solid;
 }
 
-.hidden.menu {
-  display: none;
-}
-
-.masthead.segment {
-  min-height: 90vh;
-  padding: 1em 0em;
-}
-
-.ui.inverted.segment {
-  background-color: #75BDBF;
-}
-
-.ui.inverted.vertical.footer {
-  background-color: #3D3D43;
-}
-
-.ui.secondary.inverted.pointing.menu {
-  border: none;
-}
-
-.masthead .logo.item img {
-  margin-right: 1em;
-}
-
-.masthead .ui.menu .ui.button {
-  margin-left: 0.5em;
-}
-
-.masthead h3 {
-  margin-top: 9.5em
+.masthead {
+  margin-top: 0 !important;
+  background-image: url(https://ironsummitmedia.github.io/startbootstrap-creative/img/header.jpg) !important;
+  min-height: 700px;
 }
 
 .masthead h1.ui.header {
-  margin-bottom: 0em;
-  font-size: 4em;
-  font-weight: normal;
-}
-
-.masthead h2 {
-  font-size: 1.7em;
-  font-weight: normal;
+  margin-top: 5em;
+  font-size: 3em;
 }
 
 .ui.vertical.stripe {
-  padding: 4.6em 0em;
+  padding-top: 0;
+  padding-bottom: 6em;
 }
 
-.ui.vertical.stripe .floated.image {
-  clear: both;
+.ui.vertical.stripe:nth-child(odd) {
+  background-color: rgba(231, 235, 239, 0.35);
 }
 
-.ui.vertical.stripe p {
-  font-size: 1.33em;
+.ui.vertical.stripe h2 {
+  font-size: 2em;
+  padding: 3em 0 3em;
+  color: #F75565;
 }
 
-.ui.vertical.stripe .horizontal.divider {
-  margin: 2em 0em;
+body.pushable>.pusher {
+  background-color: #75bdbf;
 }
 
-.quote.stripe.segment {
-  padding: 0em;
+body.pushable {
+  background: #fff !important;
 }
 
-.quote.stripe.segment .grid .column {
-  padding-top: 5em;
-  padding-bottom: 5em;
+.ui.segment {
+  margin: 0;
 }
 
 .footer.segment {
@@ -84,10 +53,6 @@
   color: white;
 }
 
-.secondary.pointing.menu .toc.item {
-  display: none;
-}
-
 .ui.button.primary {
   background-color: #F75565;
 }
@@ -98,26 +63,27 @@
   color: #F75565;
 }
 
-.ui.progress:first-child {
-  margin: 0 0 3.5em;
+.ui.secondary.menu {
+  border-bottom: none;
+  background-color: #75bdbf;
 }
 
-.ui.progress {
-  margin: 1em 0 3.5em;
+.ui.secondary.menu .ui.container .right.menu a {
+  color: #fff;
 }
 
-/* i.icon,
-i.icons {
-  font-size: 1.3em;
+/* .ui.secondary.menu .active.item {
+  border-color: #F75565;
 } */
-
 /* Mis clases */
 
-.ui .grid .case-study {
-  margin-top: 8em;
-  margin-bottom: 4em;
-  margin-right: 2em;
-  margin-left: 2em;
+.ui.grid.container.case-study {
+  margin-top: 3em;
+  margin-bottom: 10em;
+}
+
+.ui.grid.container.case-study:last-child {
+  margin-bottom: 3em;
 }
 
 .tags a.tag {
@@ -131,7 +97,7 @@ i.icons {
 }
 
 .ui.button.btn-github {
-  background-color: #40C7CA;
+  background-color: #75bdbf;
   color: white;
 }
 
@@ -146,34 +112,6 @@ i.icons {
   display: flex !important;
   flex-direction: column;
   justify-content: center;
-}
-
-.ui.progress .bar-html {
-  background-color: #2DCDE3;
-}
-
-.ui.progress .bar-css {
-  background-color: #49AFEA;
-}
-
-.ui.progress .bar-js {
-  background-color: #16D399;
-}
-
-.ui.progress .bar-jquery {
-  background-color: #FE7587;
-}
-
-.ui.progress .bar-git {
-  background-color: #FFA87D;
-}
-
-.ui.progress .bar-sketch {
-  background-color: #5075E0;
-}
-
-.ui.ui.progress .bar-bootstrap {
-  background-color: #1C3259;
 }
 
 h2.ui.horizontal.header.divider {
@@ -251,29 +189,8 @@ h2.ui.horizontal.header.divider {
   margin-top: 25px;
 }
 
-@media only screen and (max-width: 700px) {
-  .ui.fixed.menu {
-    display: none !important;
-  }
-  .secondary.pointing.menu .item,
-  .secondary.pointing.menu .menu {
-    display: none;
-  }
-  .secondary.pointing.menu .toc.item {
-    display: block;
-  }
-  .masthead.segment {
-    min-height: 350px;
-  }
-  .masthead h1.ui.header {
-    font-size: 2em;
-    margin-top: 1em;
-  }
-  .masthead h2 {
-    margin-top: 1em;
-    font-size: 1.2em;
-  }
-  .masthead h3 {
-    margin-top: 2em;
+@media only screen and (min-width: 1200px) {
+  .ui.grid.container {
+    width: calc(1060px + 0rem) !important;
   }
 }

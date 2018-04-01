@@ -196,3 +196,12 @@ h2.ui.horizontal.header.divider {
     width: calc(1060px + 0rem) !important;
   }
 }
+
+@media only screen and (max-width: 723px) {
+  .ui.text.container .ui.inverted.header {
+    margin-top: 3em;
+  }
+  .ui.ten.column.doubling.stackable.grid.container.skills {
+    display: none;
+  }
+}

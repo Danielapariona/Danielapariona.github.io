@@ -77,11 +77,18 @@
   padding-top: none;
 }
 
+body.pushable {
+  background-color: none;  
+}
 /* Mis clases */
 
 .ui.grid.container.case-study {
   margin-top: 3em;
   margin-bottom: 10em;
+}
+
+.ui.grid.container.case-study:last-child {
+  margin-bottom: 3em;
 }
 
 .color-white {
@@ -124,13 +131,8 @@ h2.ui.horizontal.header.divider {
   color: #FE7587
 }
 
-.profile {
-  float: right;
-  margin-right: 3em;
-}
-
 .profile img {
-  margin-bottom: 1em;
+  margin-bottom: 20px;
 }
 
 .contact i.icon {
@@ -212,4 +214,31 @@ h2.ui.horizontal.header.divider {
   .ui.ten.column.doubling.stackable.grid.container.skills {
     display: none;
   }
+
+  .picture {
+    text-align: center !important;
+  }
+
+  .ui.grid.container.case-study {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  .button.social.twitter {
+    display: none;
+  }
+  .ui.vertical.stripe {
+    padding-bottom: 0;
+  }
 }
+
+/* @media only screen and (max-width: 767px) {
+  [class*="mobile hidden"],
+  [class*="tablet only"]:not(.mobile),
+  [class*="computer only"]:not(.mobile),
+  [class*="large screen only"]:not(.mobile),
+  [class*="widescreen only"]:not(.mobile),
+  [class*="or lower hidden"] {
+    display: none !important;
+  }
+} */

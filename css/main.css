@@ -70,7 +70,6 @@
 
 .ui.secondary.menu .ui.container .right.menu a {
   color: #fff;
-
 }
 
 .ui.grid>.row {
@@ -78,18 +77,29 @@
 }
 
 body.pushable {
-  background-color: none;  
+  background-color: none;
 }
-/* Mis clases */
 
+/* /* /* Mis clases */
+
+.ui.grid.container.case-study img {
+  visibility: hidden;
+}
+ 
 .ui.grid.container.case-study {
-  margin-top: 3em;
+  margin-top: 5em;
   margin-bottom: 10em;
 }
 
 .ui.grid.container.case-study:last-child {
-  margin-bottom: 3em;
+  margin-bottom: 6em;
 }
+.ui.vertical.stripe.segment .ui.grid.container.case-study:first-child {
+  margin-top: 5em !important;
+
+  background-color: red;
+}
+
 
 .color-white {
   color: #fff !important;
@@ -145,7 +155,8 @@ h2.ui.horizontal.header.divider {
   margin-top: 4em;
 }
 
-.ui.segment, .ui.segments .segment {
+.ui.segment,
+.ui.segments .segment {
   font-size: 1.25rem;
 }
 
@@ -214,16 +225,13 @@ h2.ui.horizontal.header.divider {
   .ui.ten.column.doubling.stackable.grid.container.skills {
     display: none;
   }
-
   .picture {
     text-align: center !important;
   }
-
   .ui.grid.container.case-study {
     margin-top: 3em;
     margin-bottom: 3em;
   }
-
   .button.social.twitter {
     display: none;
   }

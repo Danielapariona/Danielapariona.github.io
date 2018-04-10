@@ -17,8 +17,21 @@ $(document)
     $('.ui.sidebar')
       .sidebar('attach events', '.toc.item');
 
-    /* $('.ui.sidebar')
-      .sidebar('toggle'); */
+    $('.ui.grid.container.case-study img')
+      .visibility({
+        once: true,
+        continuous: false,
+        offset: 320,
+        onTopPassed: function () {
+          $(this)
+            .transition({
+              animation: 'slide down',
+              reverse: 'auto',
+              interval: 1000
+            });
+        }
+      });
+
 
     $('.masthead').visibility({
       once: false,
@@ -60,7 +73,7 @@ $(document)
       var
         id = $(this).attr('href').replace('#', ''),
         $element = $('#' + id),
-        position = $element.offset().top + 10;
+        position = $element.offset().top - 25;
       $('html, body')
         .animate({
           scrollTop: position
